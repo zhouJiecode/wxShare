@@ -6,7 +6,7 @@ Dev Build:
   tags:
     - shared
   only:
-    - develop@ai-call-platform/yiwise-wepage
+    - develop@ai-call-platform/yiwise-experience
   image: node:10.10.0
   stage: build
   script:
@@ -23,7 +23,7 @@ Prod Build:
   tags:
     - shared
   only:
-    - master@ai-call-platform/yiwise-wepage
+    - master@ai-call-platform/yiwise-experience
   image: node:10.10.0
   stage: build
   script:
@@ -39,7 +39,7 @@ deploy:
   tags:
     - shared
   only:
-    - develop@ai-call-platform/yiwise-wepage
+    - develop@ai-call-platform/yiwise-experience
   image: yiwise/alpine:deploy
   stage: deploy
   script:
@@ -54,7 +54,7 @@ production1:
   tags:
     - shared
   only:
-    - master@ai-call-platform/yiwise-wepage
+    - master@ai-call-platform/yiwise-experience
   image: yiwise/alpine:deploy
   stage: deploy
   script:
@@ -69,7 +69,7 @@ production2:
   tags:
     - shared
   only:
-    - master@ai-call-platform/yiwise-wepage
+    - master@ai-call-platform/yiwise-experience
   image: yiwise/alpine:deploy
   stage: deploy
   script:
